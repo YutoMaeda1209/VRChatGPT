@@ -97,17 +97,20 @@ while True:
             },
             data=json.dumps(query))
         SendStaOSC(3)
-        match re.findall(r"[^:]+(?=:)", Exp[i])[0]:
-            case 'Happy':
-                SendExpOSC(1)
-            case 'Angry':
-                SendExpOSC(2)
-            case 'Sad':
-                SendExpOSC(3)
-            case 'Surprised':
-                SendExpOSC(4)
-            case _:
-                SendExpOSC(0)
+        try:
+            match re.findall(r"[^:]+(?=:)", Exp[i])[0]:
+                case 'Happy':
+                    SendExpOSC(1)
+                case 'Angry':
+                    SendExpOSC(2)
+                case 'Sad':
+                    SendExpOSC(3)
+                case 'Surprised':
+                    SendExpOSC(4)
+                case _:
+                    SendExpOSC(0)
+        except (IndexError):
+            SendStaOSC(4)
         playback.play(AudioSegment(response.content,
             sample_width=2, frame_rate=44100, channels=1))
     
