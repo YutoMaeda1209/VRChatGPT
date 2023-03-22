@@ -1,12 +1,6 @@
 # VRChatGPT
 https://user-images.githubusercontent.com/55312129/226665675-8beedf4f-3a55-4de9-907c-a0bf76578802.mp4
 
-----
-
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/R6R1JO9VX)
-
-----
-
 ## 概要
 VRChatGPTは、VRChat上でChatGPTを搭載したキャラクターと会話することを目的に作成されたプログラムである。
 
