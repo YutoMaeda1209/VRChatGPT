@@ -21,5 +21,7 @@ VRChatGPTは、VRChat上でChatGPTを搭載したキャラクターと会話す�
 | 4 | 驚く | エラー |
 2. [Releaseページ](https://github.com/Yuchi-Games/VRChatGPT/releases)からZipファイルをダウンロードして解凍する。
 3. COEIROINKとVRChatを起動する。
-4. Run.pyを実行する。
-5. PythonとVRChatのマイクとスピーカーをVBCableなどで接続する。
+4. Run.pyの46行目`os.environ["OPENAI_API_KEY"]`の部分をOpenAIのAPIKeyに書き換える
+※環境変数を使うことをお勧めします。
+5. Run.pyを実行する。
+6. PythonとVRChatのマイクとスピーカーをVBCableなどで接続する。
